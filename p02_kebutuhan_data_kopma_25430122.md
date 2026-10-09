@@ -5,7 +5,7 @@
 - **Nama:** Fanisa Anggraini 
 - **NIM:** 25430122
 - **Kelas:** C
-- **Tanggal:** 06/10/2026
+- **Tanggal:** 09/10/2026
 - **Dosen:** Dedi Irawan, S.Kom., M.T.I.
 - **Jenis Dokumen:** Studi Kasus Kopma 
 
