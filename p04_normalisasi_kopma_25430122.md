@@ -214,6 +214,8 @@ Nilai turunan adalah nilai yang dapat dihitung berdasarkan data lainnya. Pada co
 Dalam skema operasional yang dicontohkan buku, ketiga nilai tersebut tidak disimpan sebagai kolom tersendiri karena dapat dihitung ketika diperlukan. Keputusan ini bertujuan mengurangi risiko ketidakkonsistenan nilai apabila data transaksi berubah.
 Sementara itu, `bayar_penjualan` tetap dicatat pada relasi penjualan karena merupakan informasi pembayaran yang diperlukan dalam transaksi.
 
+## D.4 Mencocokkan dengan Skema Kanonik
+
 ### Skema Relasional Akhir
 
 **1. PENJUALAN**
@@ -279,8 +281,6 @@ ANGGOTA (
 - Kunci primer: `no_anggota`
 **Keterangan:** Tanda `*` menunjukkan kunci tamu (*foreign key*).
 
-## D.4 Mencocokkan dengan Skema Kanonik
-
 ### 7. Perbandingan dengan Skema Kanonik Kopma
 
 Skema relasional hasil normalisasi pada tahap sebelumnya dibandingkan dengan skema kanonik Kopma yang tercantum pada Tabel 4.2 buku praktikum.
@@ -337,6 +337,9 @@ PEMASOK_TELEPON (
     id_pemasok,
     no_telepon_pemasok
 )
+
+PK: (id_pemasok, no_telepon_pemasok)
+FK: id_pemasok → PEMASOK(id_pemasok)
 
 ### 2. Contoh Anomali Ubah pada Tabel Penjualan
 
